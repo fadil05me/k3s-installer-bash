@@ -22,6 +22,6 @@ chmod 0600 "$KUBECFG"
 echo "export KUBECONFIG=$KUBECFG" >> "/home/$USER/.bashrc"
 
 # Add KUBECONFIG to root's .bashrc
-sudo echo "export KUBECONFIG=/etc/rancher/k3s/k3s.yaml" >> "/root/.bashrc"
+echo "export KUBECONFIG=/etc/rancher/k3s/k3s.yaml" | sudo tee -a /root/.bashrc > /dev/null
 
 echo "K3s master installation complete."
