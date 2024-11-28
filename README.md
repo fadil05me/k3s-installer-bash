@@ -6,7 +6,7 @@ chmod +x master.sh
 ./master.sh
 ```
 
-Reboot the master server after successfully installing k3s
+**Reboot the master server after successfully installing k3s**
 
 # Install on Worker server
 
