@@ -4,9 +4,10 @@
 wget https://raw.githubusercontent.com/fadil05me/k3s-installer-bash/refs/heads/main/master.sh 
 chmod +x master.sh
 ./master.sh
+exec bash
 ```
 
-**Reboot the master server after successfully installing k3s**
+**I recommend to Reboot the master server after successfully installing k3s**
 
 # Install on Worker server
 
