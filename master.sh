@@ -3,10 +3,6 @@
 # Vars
 KUBECFG="/home/$USER/.kube/config"
 
-# Prompt for the master hostname
-read -p "Enter the hostname for this master node: " HOSTNAME
-hostnamectl set-hostname "$HOSTNAME"
-
 # Install K3s on master
 echo "Installing K3s..."
 curl -sfL https://get.k3s.io | sh -
