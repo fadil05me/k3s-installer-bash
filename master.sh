@@ -27,3 +27,7 @@ echo "export KUBECONFIG=/etc/rancher/k3s/k3s.yaml" | sudo tee -a /root/.bashrc >
 exec bash
 
 echo "K3s master installation complete."
+
+echo "Your Master Token:"
+
+sudo cat /var/lib/rancher/k3s/server/token
