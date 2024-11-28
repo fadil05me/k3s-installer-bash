@@ -24,4 +24,6 @@ echo "export KUBECONFIG=$KUBECFG" >> "/home/$USER/.bashrc"
 # Add KUBECONFIG to root's .bashrc
 echo "export KUBECONFIG=/etc/rancher/k3s/k3s.yaml" | sudo tee -a /root/.bashrc > /dev/null
 
+exec bash
+
 echo "K3s master installation complete."
